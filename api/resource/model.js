@@ -6,8 +6,8 @@ function find(){
 }
 
 
-const getById = (id) => {
-    return db('resources as rs').where('projects.project_id', id).first();
+const getById = (resource_id) => {
+    return db('resources as rs').where({resource_id}).first();
   }
   const create = async (resources) => {
     const [id] = await db('resources')

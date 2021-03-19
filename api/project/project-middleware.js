@@ -10,11 +10,11 @@ function intToBool(int) {
     };
     return result;
   }
-//   function taskToBody(task) {
-//     const result = {
-//       ...task,
-//       task_completed: intToBool(task.task_completed),
-//     };
-//     return result;
-//   }
-module.exports= {projectToBody}
+  function taskToBody(task) {
+    const result = {
+      ...task,
+      task_completed: intToBool(task.task_completed),
+    };
+    return result;
+  }
+module.exports= {projectToBody, taskToBody}
